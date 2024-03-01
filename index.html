@@ -150,6 +150,158 @@
         
 
 <div class="post">
+    <a href="/2024/03/01/wxss-01/">
+        <h2 class="post-title">wxss_01</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/3/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h3 id="swiper-轮播图"><a href="#swiper-轮播图" class="headerlink" title="swiper (轮播图)"></a>swiper (轮播图)</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>indicator-dots</td>
+<td>bololean</td>
+<td>false</td>
+<td>是否显示面板指示点</td>
+</tr>
+<tr>
+<td>indicator-color</td>
+<td>color</td>
+<td>rgba(0,0,0,3)</td>
+<td>指示点颜色</td>
+</tr>
+<tr>
+<td>indicator-active-color</td>
+<td>color</td>
+<td>#000000</td>
+<td>当前选中的指示点颜色</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否自动切换</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>number</td>
+<td>5000</td>
+<td>是否自动时间间隔</td>
+</tr>
+<tr>
+<td>circular</td>
+<td>boolean</td>
+<td>false</td>
+<td>是否采用街接滑动</td>
+</tr>
+</tbody></table>
+<pre><code class="xml">&lt;!--pages/login/login.wxml--&gt;
+&lt;swiper class=&quot;swiper-container&quot; indicator-dots indicator-color=&quot;gray&quot; autoplay interval=&quot;3000&quot; circular&gt;
+&lt;!-- autoplay是否自动切换 interval 自动时间间隔ms  circular是否滑动衔接  --&gt;
+    &lt;swiper-item&gt;
+        &lt;view class=&quot;item&quot;&gt;A&lt;/view&gt;
+    &lt;/swiper-item&gt;
+    &lt;swiper-item&gt;
+        &lt;view class=&quot;item&quot;&gt;B&lt;/view&gt;
+    &lt;/swiper-item&gt;
+    &lt;swiper-item&gt;
+        &lt;view class=&quot;item&quot;&gt;C&lt;/view&gt;
+    &lt;/swiper-item&gt;
+&lt;/swiper&gt;
+
+&lt;scroll-view class=&quot;container1&quot; scroll-y&gt;&lt;!--允许纵向滚动--&gt;
+    &lt;view&gt;A&lt;/view&gt;
+    &lt;view&gt;B&lt;/view&gt;
+    &lt;view&gt;C&lt;/view&gt;
+&lt;/scroll-view&gt;
+</code></pre>
+<pre><code class="css">/* pages/login/login.wxss */
+.container1 view &#123;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    align-self: center;
+    line-height: 100px;
+&#125;
+
+.container1 view:nth-child(1) &#123;
+    background-color: aqua;
+&#125;
+.container1 view:nth-child(2) &#123;
+    background-color:greenyellow;
+&#125;
+.container1 view:nth-child(3) &#123;
+    background-color: pink;
+&#125;
+
+.container1 &#123;
+    border: 1px solid red;
+    width: 100%;
+    height: 200px;
+&#125;
+
+
+.swiper-container &#123;
+    height: 150px;
+&#125;
+
+.item &#123;
+    height: 100%;
+    line-height: 150px;
+    text-align: center;
+&#125;
+
+swiper-item:nth-child(1) .item &#123;
+    background-color: greenyellow;
+&#125;
+swiper-item:nth-child(2) .item &#123;
+    background-color: aqua;
+&#125;
+swiper-item:nth-child(3) .item &#123;
+    background-color: pink;
+&#125;
+</code></pre>
+<p>效果图如下：</p>
+<p><img src="https://www.freeimg.cn/i/2024/03/01/65e1f79536c4a.png" alt="s_wxss-01_01.png"></p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/" style="color: #00bcd4">微信小程序开发</a>
+        </span>
+        
+    </div>
+    <a href="/2024/03/01/wxss-01/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2023/08/10/hello-world/">
         <h2 class="post-title">Hello World</h2>
     </a>
@@ -253,7 +405,7 @@
         
         <span class="tag">
             
-            <a href="/tags/java/" style="color: #00a596">java</a>
+            <a href="/tags/java/" style="color: #00bcd4">java</a>
         </span>
         
     </div>
@@ -304,7 +456,7 @@ git branch -d xx    删除本地仓库的xx分支
         
         <span class="tag">
             
-            <a href="/tags/git/" style="color: #00a596">git</a>
+            <a href="/tags/git/" style="color: #00bcd4">git</a>
         </span>
         
     </div>
@@ -347,7 +499,7 @@ git branch -d xx    删除本地仓库的xx分支
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E8%AE%B0/" style="color: #00a596">日记</a>
+            <a href="/tags/%E6%97%A5%E8%AE%B0/" style="color: #03a9f4">日记</a>
         </span>
         
     </div>

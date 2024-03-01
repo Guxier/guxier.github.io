@@ -3,7 +3,7 @@
 <html lang="zh-CH">
     <head>
         <meta charset="utf-8" />
-        <title>java | Guxierの小窝</title>
+        <title>Tags: 微信小程序开发 | Guxierの小窝</title>
         <meta name="author" content="Guxier" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -27,10 +27,6 @@
 
 
 <script src="/js/lib/preview.js"></script>
-
-
-
-
 
 
 
@@ -131,73 +127,83 @@
 
             <transition name="into">
                 <div id="main" v-show="!loading">
-                    <div class="article">
-    <div>
-        <h1>java</h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/8/7
+                    <div id="archives">
+    
+    <div class="categories-tags">
+        
+        
+        <span>
+            <a href="/tags/java/" style="background: #03a9f4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                java
+            </a>
         </span>
         
         
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
-            
-            <span class="tag">
+        
+        <span>
+            <a href="/tags/git/" style="background: #ff7d73">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                git
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/%E6%97%A5%E8%AE%B0/" style="background: #00bcd4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                日记
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                微信小程序开发
+            </a>
+        </span>
+        
+        
+        
+        
+    </div>
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2024/3/1</div>
+            <a href="/2024/03/01/wxss-01/">
+                <h3>wxss_01</h3>
+            </a>
+            <div class="info">
                 
-                <a href="/tags/java/" style="color: #00bcd4">java</a>
-            </span>
-            
-        </span>
-        
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/" style="color: #03a9f4">微信小程序开发</a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
     </div>
-    
-    <div class="content" v-pre>
-        <h3 id="final-关键字"><a href="#final-关键字" class="headerlink" title="final 关键字"></a>final 关键字</h3><ol>
-<li>final修饰的类无法继承、修饰的方法无法覆盖</li>
-<li>final修饰的变量只能赋值一次。</li>
-<li>final修饰一个对象 ：只能指向这一个对象不可修改，但对象内部数据可以修改</li>
-</ol>
-<h3 id="super"><a href="#super" class="headerlink" title="super"></a>super</h3><p>super .属性表示调用父类中的属性。<br>super .方法(参数列表)表示调用父类的方法。<br>super( )表示调用父类的无参构造方法，当创建子类对象的时候，默认会调用父类的无参构造方法。<br>super（参数列表）表示调用父类的有参构造。</p>
-<blockquote>
-<p>super 调用父类的<font face="宋体" color="#19cccc" size=5>构造方法</font>需要在<strong>第一行</strong></p>
-</blockquote>
-<hr>
-<blockquote>
-<p>以上测试<code>font</code><br>####button的交互</p>
-</blockquote>
-<pre><code class="js">button.addEventListener(&quot;click&quot; , function ()&#123;
-    window.location.href = &quot;index.html&quot;;
-&#125;);
-</code></pre>
-<p>####表单提交</p>
-<pre><code class="html">&lt;form class=&quot;form&quot; id=&quot;a_form&quot; onsubmit=&quot;submitBtnClick()&quot;&gt;  
-    &lt;input type=&quot;text&quot; class=&quot;form_input&quot; placeholder=&quot;name&quot; id=&quot;nm&quot;&gt;
-    &lt;button class=&quot;chick&quot; &gt; SIGN &lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
-<p>首先在form组件中添加<code>onsbmit</code>  </p>
-<pre><code class="js">function submitBtnClick()&#123;
-
-    document.getElementById(&quot;a_form&quot;).submit();
-    let name = document.getElementById(&quot;nm&quot;).value;
-    alert(&quot;name&quot; + name);
-&#125;
-</code></pre>
-
-    </div>
-    
-    
-    
-    
-    
-    
     
 </div>
 
@@ -230,12 +236,6 @@
             
         </div>
         <script src="/js/main.js"></script>
-        
-        
-
-
-
-
         
     </body>
 </html>
